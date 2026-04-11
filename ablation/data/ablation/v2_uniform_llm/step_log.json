@@ -1,0 +1,1271 @@
+[
+  {
+    "step": 0,
+    "mean_reward": 0.0,
+    "mean_occ": 0.011286996304988861,
+    "mean_margin": 0.0017366055399179459,
+    "llm_calls": 12,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 1,
+    "mean_reward": -0.0015625000232830644,
+    "mean_occ": 0.02196618728339672,
+    "mean_margin": 0.001369000761769712,
+    "llm_calls": 12,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 2,
+    "mean_reward": -0.0078125,
+    "mean_occ": 0.03844796493649483,
+    "mean_margin": 0.007925615645945072,
+    "llm_calls": 12,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 3,
+    "mean_reward": -0.012500000186264515,
+    "mean_occ": 0.03560749813914299,
+    "mean_margin": 0.014373588375747204,
+    "llm_calls": 12,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 4,
+    "mean_reward": -0.014062500558793545,
+    "mean_occ": 0.045020680874586105,
+    "mean_margin": 0.011833089403808117,
+    "llm_calls": 12,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 5,
+    "mean_reward": -0.01718750037252903,
+    "mean_occ": 0.05053409934043884,
+    "mean_margin": 0.011836563237011433,
+    "llm_calls": 12,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 6,
+    "mean_reward": -0.01874999888241291,
+    "mean_occ": 0.05061454698443413,
+    "mean_margin": 0.01061750203371048,
+    "llm_calls": 12,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 7,
+    "mean_reward": -0.02031249925494194,
+    "mean_occ": 0.05344323441386223,
+    "mean_margin": 0.014588996767997742,
+    "llm_calls": 12,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 8,
+    "mean_reward": -0.01874999888241291,
+    "mean_occ": 0.05068404972553253,
+    "mean_margin": 0.008661200292408466,
+    "llm_calls": 12,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 9,
+    "mean_reward": -0.02031249925494194,
+    "mean_occ": 0.07001378387212753,
+    "mean_margin": 0.01447399239987135,
+    "llm_calls": 12,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 10,
+    "mean_reward": -0.01093750074505806,
+    "mean_occ": 0.07919526100158691,
+    "mean_margin": 0.015278921462595463,
+    "llm_calls": 24,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 11,
+    "mean_reward": -0.01874999888241291,
+    "mean_occ": 0.0702778771519661,
+    "mean_margin": 0.013049580156803131,
+    "llm_calls": 24,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 12,
+    "mean_reward": -0.03281249850988388,
+    "mean_occ": 0.07227382063865662,
+    "mean_margin": 0.008997419849038124,
+    "llm_calls": 24,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 13,
+    "mean_reward": -0.03593749925494194,
+    "mean_occ": 0.07119975239038467,
+    "mean_margin": 0.01035051979124546,
+    "llm_calls": 24,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 14,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.06901626288890839,
+    "mean_margin": 0.009082566946744919,
+    "llm_calls": 24,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 15,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.06963325291872025,
+    "mean_margin": 0.007605951279401779,
+    "llm_calls": 24,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 16,
+    "mean_reward": -0.0390625,
+    "mean_occ": 0.07074198871850967,
+    "mean_margin": 0.009580741636455059,
+    "llm_calls": 24,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 17,
+    "mean_reward": -0.0390625,
+    "mean_occ": 0.07060838490724564,
+    "mean_margin": 0.008782750926911831,
+    "llm_calls": 24,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 18,
+    "mean_reward": -0.04062499850988388,
+    "mean_occ": 0.07493510097265244,
+    "mean_margin": 0.010187660343945026,
+    "llm_calls": 24,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 19,
+    "mean_reward": -0.0390625,
+    "mean_occ": 0.07028735429048538,
+    "mean_margin": 0.011297171004116535,
+    "llm_calls": 24,
+    "llm_overrides": 0,
+    "safety_violations": 0
+  },
+  {
+    "step": 20,
+    "mean_reward": -0.02031250111758709,
+    "mean_occ": 0.06378788501024246,
+    "mean_margin": 0.013143692165613174,
+    "llm_calls": 36,
+    "llm_overrides": 3,
+    "safety_violations": 0
+  },
+  {
+    "step": 21,
+    "mean_reward": -0.01874999888241291,
+    "mean_occ": 0.05683114752173424,
+    "mean_margin": 0.018414374440908432,
+    "llm_calls": 36,
+    "llm_overrides": 3,
+    "safety_violations": 0
+  },
+  {
+    "step": 22,
+    "mean_reward": -0.02656249701976776,
+    "mean_occ": 0.06662464886903763,
+    "mean_margin": 0.02077588252723217,
+    "llm_calls": 36,
+    "llm_overrides": 3,
+    "safety_violations": 0
+  },
+  {
+    "step": 23,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.0785026028752327,
+    "mean_margin": 0.020639535039663315,
+    "llm_calls": 36,
+    "llm_overrides": 3,
+    "safety_violations": 0
+  },
+  {
+    "step": 24,
+    "mean_reward": -0.04999999701976776,
+    "mean_occ": 0.07947897166013718,
+    "mean_margin": 0.01438822876662016,
+    "llm_calls": 36,
+    "llm_overrides": 3,
+    "safety_violations": 0
+  },
+  {
+    "step": 25,
+    "mean_reward": -0.05156249925494194,
+    "mean_occ": 0.08710040897130966,
+    "mean_margin": 0.00865448359400034,
+    "llm_calls": 36,
+    "llm_overrides": 3,
+    "safety_violations": 0
+  },
+  {
+    "step": 26,
+    "mean_reward": -0.046875,
+    "mean_occ": 0.08427418023347855,
+    "mean_margin": 0.011372056789696217,
+    "llm_calls": 36,
+    "llm_overrides": 3,
+    "safety_violations": 0
+  },
+  {
+    "step": 27,
+    "mean_reward": -0.05000000074505806,
+    "mean_occ": 0.10444308072328568,
+    "mean_margin": 0.010943874716758728,
+    "llm_calls": 36,
+    "llm_overrides": 3,
+    "safety_violations": 0
+  },
+  {
+    "step": 28,
+    "mean_reward": -0.0390625,
+    "mean_occ": 0.10428962856531143,
+    "mean_margin": 0.015746714547276497,
+    "llm_calls": 36,
+    "llm_overrides": 3,
+    "safety_violations": 0
+  },
+  {
+    "step": 29,
+    "mean_reward": -0.04374999925494194,
+    "mean_occ": 0.10518303513526917,
+    "mean_margin": 0.022064179182052612,
+    "llm_calls": 36,
+    "llm_overrides": 3,
+    "safety_violations": 0
+  },
+  {
+    "step": 30,
+    "mean_reward": -0.02968749962747097,
+    "mean_occ": 0.0836142972111702,
+    "mean_margin": 0.013762733899056911,
+    "llm_calls": 48,
+    "llm_overrides": 5,
+    "safety_violations": 0
+  },
+  {
+    "step": 31,
+    "mean_reward": -0.0390625,
+    "mean_occ": 0.08321217447519302,
+    "mean_margin": 0.01749098114669323,
+    "llm_calls": 48,
+    "llm_overrides": 5,
+    "safety_violations": 0
+  },
+  {
+    "step": 32,
+    "mean_reward": -0.04062500223517418,
+    "mean_occ": 0.06981860846281052,
+    "mean_margin": 0.011326796375215054,
+    "llm_calls": 48,
+    "llm_overrides": 5,
+    "safety_violations": 0
+  },
+  {
+    "step": 33,
+    "mean_reward": -0.0390625,
+    "mean_occ": 0.06950869411230087,
+    "mean_margin": 0.010771524161100388,
+    "llm_calls": 48,
+    "llm_overrides": 5,
+    "safety_violations": 0
+  },
+  {
+    "step": 34,
+    "mean_reward": -0.0390625,
+    "mean_occ": 0.06181835010647774,
+    "mean_margin": 0.01159489806741476,
+    "llm_calls": 48,
+    "llm_overrides": 5,
+    "safety_violations": 0
+  },
+  {
+    "step": 35,
+    "mean_reward": -0.04218749701976776,
+    "mean_occ": 0.06879525631666183,
+    "mean_margin": 0.009738839231431484,
+    "llm_calls": 48,
+    "llm_overrides": 5,
+    "safety_violations": 0
+  },
+  {
+    "step": 36,
+    "mean_reward": -0.04062499850988388,
+    "mean_occ": 0.0720435082912445,
+    "mean_margin": 0.010661362670361996,
+    "llm_calls": 48,
+    "llm_overrides": 5,
+    "safety_violations": 0
+  },
+  {
+    "step": 37,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.06596527248620987,
+    "mean_margin": 0.009656901471316814,
+    "llm_calls": 48,
+    "llm_overrides": 5,
+    "safety_violations": 0
+  },
+  {
+    "step": 38,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.06718594580888748,
+    "mean_margin": 0.014001000672578812,
+    "llm_calls": 48,
+    "llm_overrides": 5,
+    "safety_violations": 0
+  },
+  {
+    "step": 39,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.06727564334869385,
+    "mean_margin": 0.014046762138605118,
+    "llm_calls": 48,
+    "llm_overrides": 5,
+    "safety_violations": 0
+  },
+  {
+    "step": 40,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.0676179751753807,
+    "mean_margin": 0.010082653723657131,
+    "llm_calls": 60,
+    "llm_overrides": 9,
+    "safety_violations": 0
+  },
+  {
+    "step": 41,
+    "mean_reward": -0.04062499478459358,
+    "mean_occ": 0.06342959403991699,
+    "mean_margin": 0.009939773939549923,
+    "llm_calls": 60,
+    "llm_overrides": 9,
+    "safety_violations": 0
+  },
+  {
+    "step": 42,
+    "mean_reward": -0.04531249776482582,
+    "mean_occ": 0.07094543427228928,
+    "mean_margin": 0.00823760312050581,
+    "llm_calls": 60,
+    "llm_overrides": 9,
+    "safety_violations": 0
+  },
+  {
+    "step": 43,
+    "mean_reward": -0.04531249776482582,
+    "mean_occ": 0.07102099061012268,
+    "mean_margin": 0.00722107058390975,
+    "llm_calls": 60,
+    "llm_overrides": 9,
+    "safety_violations": 0
+  },
+  {
+    "step": 44,
+    "mean_reward": -0.05000000074505806,
+    "mean_occ": 0.06730588525533676,
+    "mean_margin": 0.008726406842470169,
+    "llm_calls": 60,
+    "llm_overrides": 9,
+    "safety_violations": 0
+  },
+  {
+    "step": 45,
+    "mean_reward": -0.046875,
+    "mean_occ": 0.08757873624563217,
+    "mean_margin": 0.0082324193790555,
+    "llm_calls": 60,
+    "llm_overrides": 9,
+    "safety_violations": 0
+  },
+  {
+    "step": 46,
+    "mean_reward": -0.04062500223517418,
+    "mean_occ": 0.08402740955352783,
+    "mean_margin": 0.011989399790763855,
+    "llm_calls": 60,
+    "llm_overrides": 9,
+    "safety_violations": 0
+  },
+  {
+    "step": 47,
+    "mean_reward": -0.04062500223517418,
+    "mean_occ": 0.0764751210808754,
+    "mean_margin": 0.013725397177040577,
+    "llm_calls": 60,
+    "llm_overrides": 9,
+    "safety_violations": 0
+  },
+  {
+    "step": 48,
+    "mean_reward": -0.04062500223517418,
+    "mean_occ": 0.060165826231241226,
+    "mean_margin": 0.009981642477214336,
+    "llm_calls": 60,
+    "llm_overrides": 9,
+    "safety_violations": 0
+  },
+  {
+    "step": 49,
+    "mean_reward": -0.04218749701976776,
+    "mean_occ": 0.0647597461938858,
+    "mean_margin": 0.008722436614334583,
+    "llm_calls": 60,
+    "llm_overrides": 9,
+    "safety_violations": 0
+  },
+  {
+    "step": 50,
+    "mean_reward": -0.03593749925494194,
+    "mean_occ": 0.06237088516354561,
+    "mean_margin": 0.0067611620761454105,
+    "llm_calls": 72,
+    "llm_overrides": 12,
+    "safety_violations": 0
+  },
+  {
+    "step": 51,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.06246279552578926,
+    "mean_margin": 0.00935092568397522,
+    "llm_calls": 72,
+    "llm_overrides": 12,
+    "safety_violations": 0
+  },
+  {
+    "step": 52,
+    "mean_reward": -0.03593749925494194,
+    "mean_occ": 0.062176335602998734,
+    "mean_margin": 0.00803547352552414,
+    "llm_calls": 72,
+    "llm_overrides": 12,
+    "safety_violations": 0
+  },
+  {
+    "step": 53,
+    "mean_reward": -0.03593749925494194,
+    "mean_occ": 0.05969573184847832,
+    "mean_margin": 0.009894377551972866,
+    "llm_calls": 72,
+    "llm_overrides": 12,
+    "safety_violations": 0
+  },
+  {
+    "step": 54,
+    "mean_reward": -0.03593749925494194,
+    "mean_occ": 0.06871677190065384,
+    "mean_margin": 0.008062760345637798,
+    "llm_calls": 72,
+    "llm_overrides": 12,
+    "safety_violations": 0
+  },
+  {
+    "step": 55,
+    "mean_reward": -0.03593749925494194,
+    "mean_occ": 0.07050900906324387,
+    "mean_margin": 0.012714498676359653,
+    "llm_calls": 72,
+    "llm_overrides": 12,
+    "safety_violations": 0
+  },
+  {
+    "step": 56,
+    "mean_reward": -0.03437500074505806,
+    "mean_occ": 0.05732661858201027,
+    "mean_margin": 0.009257911704480648,
+    "llm_calls": 72,
+    "llm_overrides": 12,
+    "safety_violations": 0
+  },
+  {
+    "step": 57,
+    "mean_reward": -0.03437500074505806,
+    "mean_occ": 0.061284881085157394,
+    "mean_margin": 0.009001086466014385,
+    "llm_calls": 72,
+    "llm_overrides": 12,
+    "safety_violations": 0
+  },
+  {
+    "step": 58,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.06550171226263046,
+    "mean_margin": 0.009487726725637913,
+    "llm_calls": 72,
+    "llm_overrides": 12,
+    "safety_violations": 0
+  },
+  {
+    "step": 59,
+    "mean_reward": -0.04062499478459358,
+    "mean_occ": 0.06911305338144302,
+    "mean_margin": 0.009611903689801693,
+    "llm_calls": 72,
+    "llm_overrides": 12,
+    "safety_violations": 0
+  },
+  {
+    "step": 60,
+    "mean_reward": -0.02968749962747097,
+    "mean_occ": 0.059528648853302,
+    "mean_margin": 0.008548595011234283,
+    "llm_calls": 84,
+    "llm_overrides": 14,
+    "safety_violations": 0
+  },
+  {
+    "step": 61,
+    "mean_reward": -0.03125,
+    "mean_occ": 0.06710731238126755,
+    "mean_margin": 0.005845339503139257,
+    "llm_calls": 84,
+    "llm_overrides": 14,
+    "safety_violations": 0
+  },
+  {
+    "step": 62,
+    "mean_reward": -0.04062499478459358,
+    "mean_occ": 0.06532017141580582,
+    "mean_margin": 0.009302220307290554,
+    "llm_calls": 84,
+    "llm_overrides": 14,
+    "safety_violations": 0
+  },
+  {
+    "step": 63,
+    "mean_reward": -0.03750000521540642,
+    "mean_occ": 0.0793221965432167,
+    "mean_margin": 0.012060225009918213,
+    "llm_calls": 84,
+    "llm_overrides": 14,
+    "safety_violations": 0
+  },
+  {
+    "step": 64,
+    "mean_reward": -0.03281250223517418,
+    "mean_occ": 0.08918438106775284,
+    "mean_margin": 0.014045663177967072,
+    "llm_calls": 84,
+    "llm_overrides": 14,
+    "safety_violations": 0
+  },
+  {
+    "step": 65,
+    "mean_reward": -0.04062500223517418,
+    "mean_occ": 0.0865837037563324,
+    "mean_margin": 0.0163324773311615,
+    "llm_calls": 84,
+    "llm_overrides": 14,
+    "safety_violations": 0
+  },
+  {
+    "step": 66,
+    "mean_reward": -0.04843750223517418,
+    "mean_occ": 0.08252032846212387,
+    "mean_margin": 0.012798398733139038,
+    "llm_calls": 84,
+    "llm_overrides": 14,
+    "safety_violations": 0
+  },
+  {
+    "step": 67,
+    "mean_reward": -0.0546875,
+    "mean_occ": 0.08733543753623962,
+    "mean_margin": 0.007646150887012482,
+    "llm_calls": 84,
+    "llm_overrides": 14,
+    "safety_violations": 0
+  },
+  {
+    "step": 68,
+    "mean_reward": -0.05625000223517418,
+    "mean_occ": 0.0875595211982727,
+    "mean_margin": 0.008676235564053059,
+    "llm_calls": 84,
+    "llm_overrides": 14,
+    "safety_violations": 0
+  },
+  {
+    "step": 69,
+    "mean_reward": -0.05781249701976776,
+    "mean_occ": 0.08689254522323608,
+    "mean_margin": 0.005736814346164465,
+    "llm_calls": 84,
+    "llm_overrides": 14,
+    "safety_violations": 0
+  },
+  {
+    "step": 70,
+    "mean_reward": -0.04218749701976776,
+    "mean_occ": 0.07591711729764938,
+    "mean_margin": 0.004838138353079557,
+    "llm_calls": 96,
+    "llm_overrides": 18,
+    "safety_violations": 0
+  },
+  {
+    "step": 71,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.07666999101638794,
+    "mean_margin": 0.0076025077141821384,
+    "llm_calls": 96,
+    "llm_overrides": 18,
+    "safety_violations": 0
+  },
+  {
+    "step": 72,
+    "mean_reward": -0.04062500223517418,
+    "mean_occ": 0.08988630026578903,
+    "mean_margin": 0.011892986483871937,
+    "llm_calls": 96,
+    "llm_overrides": 18,
+    "safety_violations": 0
+  },
+  {
+    "step": 73,
+    "mean_reward": -0.04218750074505806,
+    "mean_occ": 0.1010206937789917,
+    "mean_margin": 0.011446543037891388,
+    "llm_calls": 96,
+    "llm_overrides": 18,
+    "safety_violations": 0
+  },
+  {
+    "step": 74,
+    "mean_reward": -0.04843749478459358,
+    "mean_occ": 0.10311698168516159,
+    "mean_margin": 0.020845411345362663,
+    "llm_calls": 96,
+    "llm_overrides": 18,
+    "safety_violations": 0
+  },
+  {
+    "step": 75,
+    "mean_reward": -0.06406249850988388,
+    "mean_occ": 0.1163860633969307,
+    "mean_margin": 0.018642278388142586,
+    "llm_calls": 96,
+    "llm_overrides": 18,
+    "safety_violations": 0
+  },
+  {
+    "step": 76,
+    "mean_reward": -0.0703125,
+    "mean_occ": 0.11386880278587341,
+    "mean_margin": 0.015025136061012745,
+    "llm_calls": 96,
+    "llm_overrides": 18,
+    "safety_violations": 0
+  },
+  {
+    "step": 77,
+    "mean_reward": -0.07187499850988388,
+    "mean_occ": 0.12111520767211914,
+    "mean_margin": 0.009985465556383133,
+    "llm_calls": 96,
+    "llm_overrides": 18,
+    "safety_violations": 0
+  },
+  {
+    "step": 78,
+    "mean_reward": -0.07499999552965164,
+    "mean_occ": 0.12112987041473389,
+    "mean_margin": 0.01109414454549551,
+    "llm_calls": 96,
+    "llm_overrides": 18,
+    "safety_violations": 0
+  },
+  {
+    "step": 79,
+    "mean_reward": -0.07499999552965164,
+    "mean_occ": 0.1262919306755066,
+    "mean_margin": 0.010231158696115017,
+    "llm_calls": 96,
+    "llm_overrides": 18,
+    "safety_violations": 0
+  },
+  {
+    "step": 80,
+    "mean_reward": -0.0625000074505806,
+    "mean_occ": 0.11155954003334045,
+    "mean_margin": 0.01088766660541296,
+    "llm_calls": 108,
+    "llm_overrides": 21,
+    "safety_violations": 0
+  },
+  {
+    "step": 81,
+    "mean_reward": -0.06093749776482582,
+    "mean_occ": 0.11707824468612671,
+    "mean_margin": 0.01686166040599346,
+    "llm_calls": 108,
+    "llm_overrides": 21,
+    "safety_violations": 0
+  },
+  {
+    "step": 82,
+    "mean_reward": -0.05156249925494194,
+    "mean_occ": 0.11067438870668411,
+    "mean_margin": 0.018757682293653488,
+    "llm_calls": 108,
+    "llm_overrides": 21,
+    "safety_violations": 0
+  },
+  {
+    "step": 83,
+    "mean_reward": -0.04999999701976776,
+    "mean_occ": 0.08837290853261948,
+    "mean_margin": 0.020214533433318138,
+    "llm_calls": 108,
+    "llm_overrides": 21,
+    "safety_violations": 0
+  },
+  {
+    "step": 84,
+    "mean_reward": -0.05156249925494194,
+    "mean_occ": 0.08267983794212341,
+    "mean_margin": 0.0075966245494782925,
+    "llm_calls": 108,
+    "llm_overrides": 21,
+    "safety_violations": 0
+  },
+  {
+    "step": 85,
+    "mean_reward": -0.04999999701976776,
+    "mean_occ": 0.07707102596759796,
+    "mean_margin": 0.006852233316749334,
+    "llm_calls": 108,
+    "llm_overrides": 21,
+    "safety_violations": 0
+  },
+  {
+    "step": 86,
+    "mean_reward": -0.04999999701976776,
+    "mean_occ": 0.07337686419487,
+    "mean_margin": 0.0059455023147165775,
+    "llm_calls": 108,
+    "llm_overrides": 21,
+    "safety_violations": 0
+  },
+  {
+    "step": 87,
+    "mean_reward": -0.04999999701976776,
+    "mean_occ": 0.06712839752435684,
+    "mean_margin": 0.0046584028750658035,
+    "llm_calls": 108,
+    "llm_overrides": 21,
+    "safety_violations": 0
+  },
+  {
+    "step": 88,
+    "mean_reward": -0.04999999701976776,
+    "mean_occ": 0.0698777362704277,
+    "mean_margin": 0.004400149919092655,
+    "llm_calls": 108,
+    "llm_overrides": 21,
+    "safety_violations": 0
+  },
+  {
+    "step": 89,
+    "mean_reward": -0.04999999701976776,
+    "mean_occ": 0.06780729442834854,
+    "mean_margin": 0.0035371780395507812,
+    "llm_calls": 108,
+    "llm_overrides": 21,
+    "safety_violations": 0
+  },
+  {
+    "step": 90,
+    "mean_reward": -0.046875,
+    "mean_occ": 0.07903293520212173,
+    "mean_margin": 0.0030746760312467813,
+    "llm_calls": 120,
+    "llm_overrides": 24,
+    "safety_violations": 0
+  },
+  {
+    "step": 91,
+    "mean_reward": -0.04374999925494194,
+    "mean_occ": 0.08206432312726974,
+    "mean_margin": 0.009945726953446865,
+    "llm_calls": 120,
+    "llm_overrides": 24,
+    "safety_violations": 0
+  },
+  {
+    "step": 92,
+    "mean_reward": -0.04843750223517418,
+    "mean_occ": 0.08249925822019577,
+    "mean_margin": 0.012043560855090618,
+    "llm_calls": 120,
+    "llm_overrides": 24,
+    "safety_violations": 0
+  },
+  {
+    "step": 93,
+    "mean_reward": -0.05156249925494194,
+    "mean_occ": 0.08769752830266953,
+    "mean_margin": 0.012002977542579174,
+    "llm_calls": 120,
+    "llm_overrides": 24,
+    "safety_violations": 0
+  },
+  {
+    "step": 94,
+    "mean_reward": -0.05625000223517418,
+    "mean_occ": 0.09498532861471176,
+    "mean_margin": 0.011817282997071743,
+    "llm_calls": 120,
+    "llm_overrides": 24,
+    "safety_violations": 0
+  },
+  {
+    "step": 95,
+    "mean_reward": -0.06093749776482582,
+    "mean_occ": 0.10179411619901657,
+    "mean_margin": 0.015248581767082214,
+    "llm_calls": 120,
+    "llm_overrides": 24,
+    "safety_violations": 0
+  },
+  {
+    "step": 96,
+    "mean_reward": -0.06406249850988388,
+    "mean_occ": 0.10174205154180527,
+    "mean_margin": 0.01811397634446621,
+    "llm_calls": 120,
+    "llm_overrides": 24,
+    "safety_violations": 0
+  },
+  {
+    "step": 97,
+    "mean_reward": -0.0624999962747097,
+    "mean_occ": 0.10458657145500183,
+    "mean_margin": 0.018694017082452774,
+    "llm_calls": 120,
+    "llm_overrides": 24,
+    "safety_violations": 0
+  },
+  {
+    "step": 98,
+    "mean_reward": -0.06718749552965164,
+    "mean_occ": 0.10751521587371826,
+    "mean_margin": 0.015873750671744347,
+    "llm_calls": 120,
+    "llm_overrides": 24,
+    "safety_violations": 0
+  },
+  {
+    "step": 99,
+    "mean_reward": -0.06718749552965164,
+    "mean_occ": 0.1254378706216812,
+    "mean_margin": 0.01779681257903576,
+    "llm_calls": 120,
+    "llm_overrides": 24,
+    "safety_violations": 0
+  },
+  {
+    "step": 100,
+    "mean_reward": -0.03437500074505806,
+    "mean_occ": 0.11815986037254333,
+    "mean_margin": 0.019370289519429207,
+    "llm_calls": 132,
+    "llm_overrides": 25,
+    "safety_violations": 0
+  },
+  {
+    "step": 101,
+    "mean_reward": -0.03749999776482582,
+    "mean_occ": 0.09805381298065186,
+    "mean_margin": 0.019269393756985664,
+    "llm_calls": 132,
+    "llm_overrides": 25,
+    "safety_violations": 0
+  },
+  {
+    "step": 102,
+    "mean_reward": -0.04374999925494194,
+    "mean_occ": 0.07955958694219589,
+    "mean_margin": 0.01612377166748047,
+    "llm_calls": 132,
+    "llm_overrides": 25,
+    "safety_violations": 0
+  },
+  {
+    "step": 103,
+    "mean_reward": -0.04531249776482582,
+    "mean_occ": 0.0835241973400116,
+    "mean_margin": 0.009088478982448578,
+    "llm_calls": 132,
+    "llm_overrides": 25,
+    "safety_violations": 0
+  },
+  {
+    "step": 104,
+    "mean_reward": -0.04531249776482582,
+    "mean_occ": 0.07911854982376099,
+    "mean_margin": 0.011383871547877789,
+    "llm_calls": 132,
+    "llm_overrides": 25,
+    "safety_violations": 0
+  },
+  {
+    "step": 105,
+    "mean_reward": -0.046875,
+    "mean_occ": 0.0846419632434845,
+    "mean_margin": 0.010736797004938126,
+    "llm_calls": 132,
+    "llm_overrides": 25,
+    "safety_violations": 0
+  },
+  {
+    "step": 106,
+    "mean_reward": -0.04531249776482582,
+    "mean_occ": 0.0723203718662262,
+    "mean_margin": 0.010137474164366722,
+    "llm_calls": 132,
+    "llm_overrides": 25,
+    "safety_violations": 0
+  },
+  {
+    "step": 107,
+    "mean_reward": -0.04531249776482582,
+    "mean_occ": 0.07267110794782639,
+    "mean_margin": 0.008597449399530888,
+    "llm_calls": 132,
+    "llm_overrides": 25,
+    "safety_violations": 0
+  },
+  {
+    "step": 108,
+    "mean_reward": -0.046875,
+    "mean_occ": 0.08013217896223068,
+    "mean_margin": 0.008543737232685089,
+    "llm_calls": 132,
+    "llm_overrides": 25,
+    "safety_violations": 0
+  },
+  {
+    "step": 109,
+    "mean_reward": -0.04374999925494194,
+    "mean_occ": 0.0818692073225975,
+    "mean_margin": 0.01441666204482317,
+    "llm_calls": 132,
+    "llm_overrides": 25,
+    "safety_violations": 0
+  },
+  {
+    "step": 110,
+    "mean_reward": -0.02656250260770321,
+    "mean_occ": 0.06989601999521255,
+    "mean_margin": 0.016395436599850655,
+    "llm_calls": 144,
+    "llm_overrides": 28,
+    "safety_violations": 0
+  },
+  {
+    "step": 111,
+    "mean_reward": -0.03281250223517418,
+    "mean_occ": 0.07441944628953934,
+    "mean_margin": 0.004511980805546045,
+    "llm_calls": 144,
+    "llm_overrides": 28,
+    "safety_violations": 0
+  },
+  {
+    "step": 112,
+    "mean_reward": -0.03437500074505806,
+    "mean_occ": 0.0740571990609169,
+    "mean_margin": 0.004415173549205065,
+    "llm_calls": 144,
+    "llm_overrides": 28,
+    "safety_violations": 0
+  },
+  {
+    "step": 113,
+    "mean_reward": -0.046875,
+    "mean_occ": 0.08027984946966171,
+    "mean_margin": 0.005457078572362661,
+    "llm_calls": 144,
+    "llm_overrides": 28,
+    "safety_violations": 0
+  },
+  {
+    "step": 114,
+    "mean_reward": -0.046875,
+    "mean_occ": 0.07848753780126572,
+    "mean_margin": 0.004928664769977331,
+    "llm_calls": 144,
+    "llm_overrides": 28,
+    "safety_violations": 0
+  },
+  {
+    "step": 115,
+    "mean_reward": -0.05312499776482582,
+    "mean_occ": 0.08510878682136536,
+    "mean_margin": 0.00413034250959754,
+    "llm_calls": 144,
+    "llm_overrides": 28,
+    "safety_violations": 0
+  },
+  {
+    "step": 116,
+    "mean_reward": -0.05937500298023224,
+    "mean_occ": 0.08473354578018188,
+    "mean_margin": 0.004878360778093338,
+    "llm_calls": 144,
+    "llm_overrides": 28,
+    "safety_violations": 0
+  },
+  {
+    "step": 117,
+    "mean_reward": -0.0546875037252903,
+    "mean_occ": 0.09410542994737625,
+    "mean_margin": 0.004212852101773024,
+    "llm_calls": 144,
+    "llm_overrides": 28,
+    "safety_violations": 0
+  },
+  {
+    "step": 118,
+    "mean_reward": -0.046875,
+    "mean_occ": 0.11048463732004166,
+    "mean_margin": 0.009195693768560886,
+    "llm_calls": 144,
+    "llm_overrides": 28,
+    "safety_violations": 0
+  },
+  {
+    "step": 119,
+    "mean_reward": -0.04218749701976776,
+    "mean_occ": 0.09139949083328247,
+    "mean_margin": 0.018431490287184715,
+    "llm_calls": 144,
+    "llm_overrides": 28,
+    "safety_violations": 0
+  },
+  {
+    "step": 120,
+    "mean_reward": -0.02968749962747097,
+    "mean_occ": 0.07814093679189682,
+    "mean_margin": 0.017976613715291023,
+    "llm_calls": 156,
+    "llm_overrides": 30,
+    "safety_violations": 0
+  },
+  {
+    "step": 121,
+    "mean_reward": -0.03437500074505806,
+    "mean_occ": 0.07105350494384766,
+    "mean_margin": 0.01384494174271822,
+    "llm_calls": 156,
+    "llm_overrides": 30,
+    "safety_violations": 0
+  },
+  {
+    "step": 122,
+    "mean_reward": -0.03437500074505806,
+    "mean_occ": 0.06851870566606522,
+    "mean_margin": 0.009596367366611958,
+    "llm_calls": 156,
+    "llm_overrides": 30,
+    "safety_violations": 0
+  },
+  {
+    "step": 123,
+    "mean_reward": -0.0390625,
+    "mean_occ": 0.07117892801761627,
+    "mean_margin": 0.010122100822627544,
+    "llm_calls": 156,
+    "llm_overrides": 30,
+    "safety_violations": 0
+  },
+  {
+    "step": 124,
+    "mean_reward": -0.04062500223517418,
+    "mean_occ": 0.07351358979940414,
+    "mean_margin": 0.010603710077702999,
+    "llm_calls": 156,
+    "llm_overrides": 30,
+    "safety_violations": 0
+  },
+  {
+    "step": 125,
+    "mean_reward": -0.04531249776482582,
+    "mean_occ": 0.07558325678110123,
+    "mean_margin": 0.0120336152613163,
+    "llm_calls": 156,
+    "llm_overrides": 30,
+    "safety_violations": 0
+  },
+  {
+    "step": 126,
+    "mean_reward": -0.04531249776482582,
+    "mean_occ": 0.0873439684510231,
+    "mean_margin": 0.011630963534116745,
+    "llm_calls": 156,
+    "llm_overrides": 30,
+    "safety_violations": 0
+  },
+  {
+    "step": 127,
+    "mean_reward": -0.04062500223517418,
+    "mean_occ": 0.08925876766443253,
+    "mean_margin": 0.015497374348342419,
+    "llm_calls": 156,
+    "llm_overrides": 30,
+    "safety_violations": 0
+  },
+  {
+    "step": 128,
+    "mean_reward": -0.04531249776482582,
+    "mean_occ": 0.08711931854486465,
+    "mean_margin": 0.017344903200864792,
+    "llm_calls": 156,
+    "llm_overrides": 30,
+    "safety_violations": 0
+  },
+  {
+    "step": 129,
+    "mean_reward": -0.05156249180436134,
+    "mean_occ": 0.09044428914785385,
+    "mean_margin": 0.013982689939439297,
+    "llm_calls": 156,
+    "llm_overrides": 30,
+    "safety_violations": 0
+  },
+  {
+    "step": 130,
+    "mean_reward": -0.04374999925494194,
+    "mean_occ": 0.08601799607276917,
+    "mean_margin": 0.006848745513707399,
+    "llm_calls": 168,
+    "llm_overrides": 32,
+    "safety_violations": 0
+  },
+  {
+    "step": 131,
+    "mean_reward": -0.05156250298023224,
+    "mean_occ": 0.0902983769774437,
+    "mean_margin": 0.004616416525095701,
+    "llm_calls": 168,
+    "llm_overrides": 32,
+    "safety_violations": 0
+  },
+  {
+    "step": 132,
+    "mean_reward": -0.06093749776482582,
+    "mean_occ": 0.09350314736366272,
+    "mean_margin": 0.005913934204727411,
+    "llm_calls": 168,
+    "llm_overrides": 32,
+    "safety_violations": 0
+  },
+  {
+    "step": 133,
+    "mean_reward": -0.06093749776482582,
+    "mean_occ": 0.09004008769989014,
+    "mean_margin": 0.002747219055891037,
+    "llm_calls": 168,
+    "llm_overrides": 32,
+    "safety_violations": 0
+  },
+  {
+    "step": 134,
+    "mean_reward": -0.06093749776482582,
+    "mean_occ": 0.08757110685110092,
+    "mean_margin": 0.006227674428373575,
+    "llm_calls": 168,
+    "llm_overrides": 32,
+    "safety_violations": 0
+  },
+  {
+    "step": 135,
+    "mean_reward": -0.05781249701976776,
+    "mean_occ": 0.10608077049255371,
+    "mean_margin": 0.004999898839741945,
+    "llm_calls": 168,
+    "llm_overrides": 32,
+    "safety_violations": 0
+  },
+  {
+    "step": 136,
+    "mean_reward": -0.046875,
+    "mean_occ": 0.11763312667608261,
+    "mean_margin": 0.013325725682079792,
+    "llm_calls": 168,
+    "llm_overrides": 32,
+    "safety_violations": 0
+  },
+  {
+    "step": 137,
+    "mean_reward": -0.05156249925494194,
+    "mean_occ": 0.10852789878845215,
+    "mean_margin": 0.018988056108355522,
+    "llm_calls": 168,
+    "llm_overrides": 32,
+    "safety_violations": 0
+  },
+  {
+    "step": 138,
+    "mean_reward": -0.06093749776482582,
+    "mean_occ": 0.0989551767706871,
+    "mean_margin": 0.022050505504012108,
+    "llm_calls": 168,
+    "llm_overrides": 32,
+    "safety_violations": 0
+  },
+  {
+    "step": 139,
+    "mean_reward": -0.06093749776482582,
+    "mean_occ": 0.09976653009653091,
+    "mean_margin": 0.007628306746482849,
+    "llm_calls": 168,
+    "llm_overrides": 32,
+    "safety_violations": 0
+  },
+  {
+    "step": 140,
+    "mean_reward": 0.0,
+    "mean_occ": 0.0,
+    "mean_margin": 0.006653573364019394,
+    "llm_calls": 180,
+    "llm_overrides": 33,
+    "safety_violations": 0
+  }
+]

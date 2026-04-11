@@ -1,0 +1,86 @@
+[
+  {
+    "step": 0,
+    "mean_reward": 0.0,
+    "mean_occ": 0.011286996304988861,
+    "mean_margin": 0.0017366055399179459,
+    "n_uncertain": 12,
+    "llm_calls": 2,
+    "llm_overrides": 2,
+    "safety_adjustments": 2,
+    "budget_left": 1598,
+    "intervention_rate": 100.0
+  },
+  {
+    "step": 1,
+    "mean_reward": -0.0015625000232830644,
+    "mean_occ": 0.02196618728339672,
+    "mean_margin": 0.000708404288161546,
+    "n_uncertain": 12,
+    "llm_calls": 4,
+    "llm_overrides": 3,
+    "safety_adjustments": 12,
+    "budget_left": 1596,
+    "intervention_rate": 100.0
+  },
+  {
+    "step": 2,
+    "mean_reward": -0.0078125,
+    "mean_occ": 0.03424828127026558,
+    "mean_margin": 0.0072630587965250015,
+    "n_uncertain": 12,
+    "llm_calls": 6,
+    "llm_overrides": 5,
+    "safety_adjustments": 22,
+    "budget_left": 1594,
+    "intervention_rate": 100.0
+  },
+  {
+    "step": 3,
+    "mean_reward": -0.0031250000465661287,
+    "mean_occ": 0.022573992609977722,
+    "mean_margin": 0.012377604842185974,
+    "n_uncertain": 12,
+    "llm_calls": 8,
+    "llm_overrides": 5,
+    "safety_adjustments": 22,
+    "budget_left": 1592,
+    "intervention_rate": 100.0
+  },
+  {
+    "step": 4,
+    "mean_reward": -0.010937499813735485,
+    "mean_occ": 0.03634214773774147,
+    "mean_margin": 0.005558317061513662,
+    "n_uncertain": 12,
+    "llm_calls": 10,
+    "llm_overrides": 6,
+    "safety_adjustments": 25,
+    "budget_left": 1590,
+    "intervention_rate": 100.0
+  },
+  {
+    "step": 5,
+    "mean_reward": -0.01718750037252903,
+    "mean_occ": 0.04202825948596001,
+    "mean_margin": 0.008445351384580135,
+    "n_uncertain": 12,
+    "llm_calls": 12,
+    "llm_overrides": 6,
+    "safety_adjustments": 35,
+    "budget_left": 1588,
+    "intervention_rate": 100.0
+  },
+  {
+    "step": 6,
+    "mean_reward": 0.0,
+    "mean_occ": 0.0,
+    "mean_margin": 0.006475884933024645,
+    "n_uncertain": 12,
+    "llm_calls": 14,
+    "llm_overrides": 6,
+    "safety_adjustments": 41,
+    "budget_left": 1586,
+    "intervention_rate": 100.0
+  }
+]

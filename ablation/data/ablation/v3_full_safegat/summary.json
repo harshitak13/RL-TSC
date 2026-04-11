@@ -1,0 +1,14 @@
+{
+  "variant": "V3_Full_SafeGAT",
+  "description": "Selective LLM (Q-margin gate) + Safety Shield",
+  "total_sim_steps": 7,
+  "total_reward": -0.4875,
+  "mean_step_reward": -0.005804,
+  "mean_occupancy": 0.0241,
+  "llm_calls": 14,
+  "llm_overrides": 6,
+  "safety_adjustments": 41,
+  "safety_violations": 0,
+  "intervention_rate_%": 100.0,
+  "llm_budget_used_%": 0.88
+}
