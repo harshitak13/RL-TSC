@@ -1,122 +1,77 @@
-# SafeGAT-iLLM: Unified GAT-DQN + SafeGAT LLM Integration
+# RL-Based Traffic Signal Control
 
-A unified traffic signal control system combining:
+## Overview
 
-- **iLLM-TSC2**: SUMO environment, CoLight-style GAT-DQN model, replay buffer, and training loop
-- **SafeGAT-LLM**: Structured LLM integration pipeline with uncertainty gating, scenario detection,
-  safety shielding, and decision logging
+This project focuses on optimizing traffic signal control using Reinforcement Learning (RL) techniques in both single and multi-intersection environments. The objective is to improve traffic flow efficiency and reduce congestion under varying traffic conditions.
 
-## Architecture
+---
 
-```
-SUMO (GridEnv)
-    │
-    ▼
-GAT-DQN (GATQNetwork)
-    │  proposes actions + Q-values + attention weights
-    ▼
-SafeGATRefiner pipeline
-    ├── ScenarioDetector  →  anomaly tags (queue spike, NaN, emergency)
-    ├── InterventionGate  →  should LLM intervene? (low confidence / anomaly)
-    ├── TrafficPromptBuilder → structured LLM prompt
-    ├── LLMGateway        → calls Groq/OpenAI, parses JSON response
-    └── SafetyShield      → hard enforcement (yellow-lock, min-green)
-    │
-    ▼
-DecisionLogger  →  JSONL audit trail
-    │
-    ▼
-env.step(safe_actions)
-```
+## Features
 
-## Project Layout
+- Supports **single and multi-intersection** traffic environments
+- Implementation of multiple RL algorithms:
+  - Deep Q-Network (**DQN**)
+  - Double DQN (**DDQN**)
+  - Proximal Policy Optimization (**PPO**)
+- Performance evaluation using key metrics:
+  - Reward
+  - Queue Length
+  - Average Travel Time
+- Implemented **CoLight (Graph Attention-based RL)** for:
+  - Single intersection
+  - 4×4 multi-intersection grid
 
-```
-SafeGAT_iLLM/
-├── envs/
-│   └── grid_env_wrapper.py     # SUMO multi-junction GridEnv (from iLLM-TSC2)
-├── training/
-│   ├── gat_network.py          # GATQNetwork: encoder + GATConv + Q-head
-│   └── gat_dqn_trainer.py      # FastGATDQNTrainer: vectorised batched updates
-├── llm/
-│   ├── types.py                # RLDecisionInfo, LLMDecision, RefineResult
-│   ├── scenario_detector.py    # Anomaly detection (NaN, queue spike, emergency)
-│   ├── intervention_gate.py    # Uncertainty + anomaly gate (GateDecision)
-│   ├── traffic_prompt_builder.py # LLM prompt construction
-│   ├── llm_gateway.py          # LLM backend wrapper (Groq / OpenAI-compatible)
-│   ├── safety_shield.py        # Post-LLM hard safety constraints
-│   ├── action_refiner.py       # SafeGATRefiner: orchestrates full pipeline
-│   └── decision_logger.py      # JSONL per-step audit logging
-├── utils/
-│   ├── make_tsc_env.py         # TSCEnvironment factory per junction
-│   ├── readConfig.py           # config.yaml / env-var loader
-│   └── margin.py               # Q-margin computation helper
-├── configs/
-│   └── config.yaml             # API key, model, base URL
-├── train.py                    # Training entry point
-└── run_safegat.py              # Inference entry point (SafeGAT + LLM)
-```
+---
 
-## Setup
+## Methodology
 
-### 1. Install dependencies
+- Simulated traffic environments to model real-world scenarios
+- Trained RL agents to control traffic signals dynamically
+- Compared different algorithms based on efficiency and stability
+- Implemented CoLight, a graph attention-based multi-agent RL approach, to enable coordination between intersections
+- Modeled intersections as nodes and traffic flow as edges for efficient communication
 
-```bash
-pip install torch torch_geometric tshub langchain langchain-openai loguru pyyaml
-```
+---
 
-TransSimHub (tshub):
-```bash
-git clone https://github.com/Traffic-Alpha/TransSimHub.git
-cd TransSimHub && pip install -e .
-```
+## Results
 
-### 2. Configure API key
+- Improved traffic flow and reduced congestion compared to baseline methods
+- Observed variations in performance across different RL algorithms
+- Demonstrated effectiveness of RL in adaptive traffic signal control
 
-Edit `configs/config.yaml`:
-```yaml
-OPENAI_API_KEY:   "gsk_YOUR_GROQ_KEY"
-OPENAI_API_MODEL: "llama-3.1-8b-instant"
-OPENAI_API_BASE:  "https://api.groq.com/openai/v1"
-OPENAI_PROXY:     ""
-```
+---
 
-### 3. Add your network files
+## Tech Stack
 
-Place `4x4.net.xml` and `4x4.sumocfg` in `network/`.
-Update `network/net_config.py` with your junction IDs and topology.
+- Python
+- Reinforcement Learning frameworks (e.g., Stable-Baselines / PyTorch / TensorFlow)
+- Traffic simulation tools (e.g., SUMO / custom environment)
+- Graph Neural Networks (for CoLight implementation)
 
-## Running
+---
 
-### Training
-```bash
-python train.py
-```
+## Advanced Work
 
-### Inference (SafeGAT + LLM)
-```bash
-python run_safegat.py
-```
+- Implemented **CoLight**, a state-of-the-art multi-agent RL approach using graph attention mechanisms
+- Enabled communication between intersections for coordinated traffic signal control
+- Evaluated performance on both single intersection and 4×4 grid environments
 
-## Key Hyperparameters
+## Future Work
 
-| Parameter | Default | Description |
-|---|---|---|
-| `Q_MARGIN_TAU` | 0.05 | Q-margin threshold below which LLM is called |
-| `LLM_BUDGET` | 1600 | Max LLM calls for an inference episode |
-| `MAX_NODES_PER_STEP` | 2 | Max nodes sent to LLM per simulation step |
-| `MIN_GREEN_STEPS` | 3 | Minimum green hold before phase switch |
-| `confidence_threshold` | 0.15 | Gate confidence threshold |
-| `intervention_budget` | 8 | Gate max interventions per gate scoring round |
+- Integration of **Large Language Models (LLMs)** for enhanced decision-making
+- Scaling to more complex and real-world traffic networks
+- Incorporating multi-modal traffic data
 
-## SafeGAT Decision Flow
+---
 
-1. GAT-DQN proposes actions and Q-values for all 12 junctions
-2. Q-margins (Δ = Q(a\*) − Q(a2nd)) are computed per node
-3. Nodes with Δ < τ or anomaly flags are flagged for LLM review
-4. `SafeGATRefiner.refine()` runs the full pipeline per flagged node:
-   - Detect scenario anomalies
-   - Gate scores confidence + anomaly severity
-   - If gate opens: prompt LLM, parse response, apply or accept
-   - Safety shield validates legal phase and minimum green hold
-5. Final actions are logged and executed in SUMO
+## Contributors
+
+- Harshita Karnam
+
+---
+
+## License
+
+This project is open-source and available under the MIT License.
+
+> > > > > > > 4b003c10a9a7cc8684de29055e640e9da98e0a13
