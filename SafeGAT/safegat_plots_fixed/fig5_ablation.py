@@ -67,22 +67,24 @@ def _ablation_figure(v1_r, v1_o, v1_calls, v1_viol,
     ax.legend(fontsize=10); ax.grid(alpha=0.3)
 
     # ── (0, 2) Total LLM calls bar ────────────────────────────────────────────
+    # V1 is excluded: GAT-DQN has no LLM component, so 0 calls is definitional,
+    # not a result — including it as an empty bar would be misleading.
     ax = fig.add_subplot(gs[0, 2])
-    bars = ax.bar(["V1", "V2", "V3"],
-                  [v1_calls, v2_calls, v3_calls],
-                  color=[C["v1"], C["v2"], C["v3"]],
+    bars = ax.bar(["V2", "V3"],
+                  [v2_calls, v3_calls],
+                  color=[C["v2"], C["v3"]],
                   edgecolor="white", width=0.5)
-    for bar, v in zip(bars, [v1_calls, v2_calls, v3_calls]):
+    for bar, v in zip(bars, [v2_calls, v3_calls]):
         ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + max(v2_calls,1)*0.01,
                 f"{v:,}", ha="center", va="bottom", fontsize=11, fontweight="bold")
     if v3_calls > 0 and v2_calls > 0:
         ratio = v2_calls / v3_calls
         ax.annotate(f"V3 uses {ratio:.1f}× fewer\nLLM calls than V2",
-                    xy=(2, v3_calls), xytext=(1.2, v2_calls * 0.6),
+                    xy=(1, v3_calls), xytext=(0.3, v2_calls * 0.6),
                     arrowprops=dict(arrowstyle="->", color="black"),
                     fontsize=9, fontweight="bold",
                     bbox=dict(boxstyle="round,pad=0.3", fc="lightyellow", ec="gray"))
-    ax.set_title("Total LLM Calls", fontweight="bold")
+    ax.set_title("Total LLM Calls\n(V1 excluded: no LLM component)", fontweight="bold")
     ax.set_ylabel("All Calls", fontweight="bold")
     ax.grid(True, axis="y", alpha=0.3)
 
@@ -97,20 +99,23 @@ def _ablation_figure(v1_r, v1_o, v1_calls, v1_viol,
     ax.legend(fontsize=10); ax.grid(alpha=0.3)
 
     # ── (1, 2) Safety violations bar ─────────────────────────────────────────
+    # V3 is excluded: 0 violations is the shield's design guarantee,
+    # not a measured result — an empty bar would misrepresent the comparison.
     ax = fig.add_subplot(gs[1, 2])
-    bars = ax.bar(["V1", "V2", "V3"],
-                  [v1_viol, v2_viol, v3_viol],
-                  color=[C["v1"], C["v2"], C["v3"]],
+    bars = ax.bar(["V1", "V2"],
+                  [v1_viol, v2_viol],
+                  color=[C["v1"], C["v2"]],
                   edgecolor="white", width=0.5)
-    for bar, v in zip(bars, [v1_viol, v2_viol, v3_viol]):
+    for bar, v in zip(bars, [v1_viol, v2_viol]):
         ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + max(v2_viol,1)*0.01,
                 str(v), ha="center", va="bottom", fontsize=11, fontweight="bold")
-    ax.annotate("V3 shield eliminates\nall violations",
-                xy=(2, 0.5), xytext=(0.8, max(v2_viol,1)*0.5),
-                arrowprops=dict(arrowstyle="->", color="black"),
-                fontsize=9, fontweight="bold",
+    ax.annotate("V3 shield eliminates\nall violations (excluded)",
+                xy=(0.5, max(v1_viol, v2_viol) * 0.5),
+                xytext=(0.5, max(v2_viol,1) * 0.75),
+                fontsize=9, fontweight="bold", ha="center",
                 bbox=dict(boxstyle="round,pad=0.3", fc="lightyellow", ec="gray"))
-    ax.set_title("Safety Violations\n(Premature Phase Switches)", fontweight="bold")
+    ax.set_title("Safety Violations\n(Premature Phase Switches; V3=0 by design)",
+                 fontweight="bold")
     ax.set_ylabel("Violation Count", fontweight="bold")
     ax.grid(True, axis="y", alpha=0.3)
 
@@ -177,17 +182,17 @@ def plot_fig5():
         axes[row, 0].set_ylabel("Mean Reward", fontweight="bold")
         axes[row, 0].legend(fontsize=10); axes[row, 0].grid(alpha=0.3)
 
-        # LLM calls
-        axes[row, 1].bar(["V1", "V2", "V3"], [v1_c, v2_c, v3_c],
-                         color=[C["v1"], C["v2"], C["v3"]], edgecolor="white")
-        axes[row, 1].set_title(f"Total LLM Calls — {lbl}", fontweight="bold")
+        # LLM calls — V1 excluded (no LLM component by definition)
+        axes[row, 1].bar(["V2", "V3"], [v2_c, v3_c],
+                         color=[C["v2"], C["v3"]], edgecolor="white")
+        axes[row, 1].set_title(f"Total LLM Calls — {lbl}\n(V1 excl.: no LLM)", fontweight="bold")
         axes[row, 1].set_ylabel("Calls", fontweight="bold")
         axes[row, 1].grid(True, axis="y", alpha=0.3)
 
-        # Safety violations
-        axes[row, 2].bar(["V1", "V2", "V3"], [v1_v, v2_v, v3_v],
-                         color=[C["v1"], C["v2"], C["v3"]], edgecolor="white")
-        axes[row, 2].set_title(f"Safety Violations — {lbl}", fontweight="bold")
+        # Safety violations — V3 excluded (0 by shield design, not a measured result)
+        axes[row, 2].bar(["V1", "V2"], [v1_v, v2_v],
+                         color=[C["v1"], C["v2"]], edgecolor="white")
+        axes[row, 2].set_title(f"Safety Violations — {lbl}\n(V3 excl.: 0 by design)", fontweight="bold")
         axes[row, 2].set_ylabel("Count", fontweight="bold")
         axes[row, 2].grid(True, axis="y", alpha=0.3)
 
