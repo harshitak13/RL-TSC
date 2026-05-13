@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-*.pyo
-models/*.pt
-log/
-output/
-data/
-*.egg-info/
-.DS_Store
